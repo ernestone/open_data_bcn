@@ -61,7 +61,10 @@ services: {}
 # before your code runs.
 # Use `anaconda-project add-download` to add downloads.
 #
-downloads: {}
+downloads: 
+  BCN_COMERC:
+    url: http://opendata-ajuntament.barcelona.cat/data/dataset/62fb990e-4cc3-457a-aea1-497604e15659/resource/18cbddda-ad3f-41b8-8229-064f0faa930b/download/2016_cens_locals_plantabaixa.csv
+    filename: download_data/2016_CENS_LOCALS_PlantaBaixa.csv
 
 
 
