@@ -16,18 +16,10 @@ name: open_data_bcn
 # Set the 'icon' key to give your project an icon
 #
 icon:
-
-
-
-
 #
 # Set a one-sentence-or-so 'description' key with project details
 #
 description:
-
-
-
-
 #
 # In the commands section, list your runnable scripts, notebooks, and other code.
 # Use `anaconda-project add-command` to add commands.
@@ -39,29 +31,26 @@ commands:
 
 
 
+  jupyter-lab:
+    windows: jupyter lab
+    env_spec: default
 #
 # In the variables section, list any environment variables your code depends on.
 # Use `anaconda-project add-variable` to add variables.
 #
 variables: {}
-
-
-
 #
 # In the services section, list any services that should be
 # available before your code runs.
 # Use `anaconda-project add-service` to add services.
 #
 services: {}
-
-
-
 #
 # In the downloads section, list any URLs to download to local files
 # before your code runs.
 # Use `anaconda-project add-download` to add downloads.
 #
-downloads: 
+downloads:
   BCN_COMERC:
     url: http://opendata-ajuntament.barcelona.cat/data/dataset/62fb990e-4cc3-457a-aea1-497604e15659/resource/18cbddda-ad3f-41b8-8229-064f0faa930b/download/2016_cens_locals_plantabaixa.csv
     filename: download_data/2016_CENS_LOCALS_PlantaBaixa.csv
@@ -76,6 +65,10 @@ downloads:
 packages:
 - geopandas
 - ipyleaflet
+- bokeh
+- bqplot
+- json2html
+- jupyterlab
 
 
 
