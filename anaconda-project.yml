@@ -67,8 +67,9 @@ packages:
 - ipyleaflet
 - bokeh
 - bqplot
-- json2html
 - jupyterlab
+- pip:
+  - json2html
 
 
 
@@ -83,6 +84,7 @@ packages:
 #
 channels:
 - conda-forge
+- auto
 
 
 
